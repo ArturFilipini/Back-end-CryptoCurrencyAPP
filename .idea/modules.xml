@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CryptoCurrencyApp/CryptoCurrencyApp.iml" filepath="$PROJECT_DIR$/CryptoCurrencyApp/CryptoCurrencyApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/MicroServicesModules.iml" filepath="$PROJECT_DIR$/.idea/MicroServicesModules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery/demo.iml" filepath="$PROJECT_DIR$/discovery/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
     </modules>
   </component>
 </project>
