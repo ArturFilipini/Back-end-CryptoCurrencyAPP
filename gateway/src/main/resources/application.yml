@@ -1,18 +1,25 @@
-spring:
-  application:
-    name: gateway
 server:
   port: 8080
 
+spring:
+  main:
+    web-application-type: reactive
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: cryptocurrency
+          uri: lb://cryptocurrency
+          predicates:
+            - Path=/main/**
+
+
 
 eureka:
-  instante:
-    prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://localhost:8081/eureka
+      defaultZone: http://localhost:8081/eureka/
     fetch-registry: true
     register-with-eureka: true
 
-zuul:
-  sensitive-headers: Cookie

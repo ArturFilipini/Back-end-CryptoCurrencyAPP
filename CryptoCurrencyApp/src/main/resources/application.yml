@@ -3,13 +3,11 @@ server:
 
 spring:
   application:
-    name: CryptoCurrencyApp
+    name: cryptocurrency
 
 eureka:
-  instante:
-    prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://localhost:8081/eureka
+      defaultZone: http://localhost:8081/eureka/
     fetch-registry: true
     register-with-eureka: true
