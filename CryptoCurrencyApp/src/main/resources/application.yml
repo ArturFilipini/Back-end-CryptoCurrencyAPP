@@ -4,6 +4,13 @@ server:
 spring:
   application:
     name: cryptocurrency
+  datasource:
+    url: jdbc:mysql://localhost:3306/crypto?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
 
 eureka:
   client:
