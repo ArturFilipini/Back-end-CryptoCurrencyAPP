@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.security.RolesAllowed;
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
