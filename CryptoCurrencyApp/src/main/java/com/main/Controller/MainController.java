@@ -49,6 +49,13 @@ public class MainController {
         }
     }
 
+    @GetMapping("image")
+    @CrossOrigin
+    @RolesAllowed("admin")
+    public ResponseEntity<List<ImageEntity>> getImages(){
+        return ResponseEntity.ok(repository.findAll());
+    }
+
     @GetMapping("admin")
     @RolesAllowed("admin")
     public ResponseEntity<String> admin(){
